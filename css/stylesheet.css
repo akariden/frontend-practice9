@@ -320,7 +320,7 @@ footer {
 .footer-flexbox {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -338,21 +338,21 @@ footer {
 
 .location, .contact.menu-links  {
   display: flex;
-  width: 360px;
-  flex-wrap: wrap;
+  /* width: 360px;
+  flex-wrap: wrap; */
 }
 
 .location {
   max-width: 360px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .contact {
-  width:200px;
+  /* width:200px; */
 }
 
 .menu-links {
-  width: 250px;
+  /* width: 250px; */
   display: flex;
 }
 
@@ -365,7 +365,7 @@ footer {
 .contact > div {
   flex: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: flex-start;
 }
 
@@ -400,15 +400,6 @@ footer {
 
   /*********** media queries *****************/
 
-@media screen and (max-width: 1300px) {
-  .footer-flexbox {
-    flex-direction: column;
-  }
-
-  .footer-flexbox > div {
-    margin-bottom: 20px;
-  }
-}
 
 @media screen and (max-width: 900px) {
   html {
@@ -449,6 +440,16 @@ footer {
   .signup-wrapper {
     padding: 4rem;
   }
+
+  .footer-flexbox {
+    flex-direction: column;
+  }
+
+  .footer-flexbox > div {
+    margin-bottom: 20px;
+  }
+}
+
 
 }
 
